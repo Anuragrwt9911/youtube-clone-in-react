@@ -451,3 +451,6 @@ const youtubeVideosList = {
     resultsPerPage: 5,
   },
 };
+export const LIVE_CHAT_COUNT = 25;
+
+//live chat >>> infiniteScroll >>> pagination

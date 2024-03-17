@@ -67,3 +67,24 @@ so we want our previous searches to go in cache and after then when the user cle
 //we can do this by using redux js because we have to track what to show to the user when he deletes each character so we want to display previus searches to it. that's why we use redux to pass that state to the searchinput.
 
 we wil creating searchinputslice and the initialState would be an epmty object
+if search query doesn't contain the searchCache mean stored searches then make an api call and update the searchCache with that api call.
+for update that i will dispatch the action (cacheResults)
+
+//live chat in youtube
+
+challenges -> 1. get Data live
+2.update the ui
+
+eg - a new comment div is appended every single time a new comment is made.so div is constantly pusing thediv butit not freezed our page bcoz of too many divs kep pushing which slows ou page.
+
+two ways to handle live data -> 1. websockets -> ite create a handshake betwen teh ui an the server it is a bidirectional sending and updating o data at no interval.
+ui can esnd data server can send data that's wy it's
+
+2. Api polling -> it aso creates a handsake bthe ui an the sever but passign ata in a unidierctional at regular intervals. only server to ui data transfer tht's why it is unidirectional. eg-> ui will take data from the server at a regular intervals let's say ater every 2 seconds the ui takes the data from the server.
+
+i want toupdate my chatlet's build our redux store .
+
+for sendnig your own mesage toth\ live chat -> first makea state varialbe and second make an input box and a button pass the value and onchange attributes to the input box by giving them the state varables and then make this input and buton a form and prevetn default of form by onsubmit event and on submit dispatch({
+name : "your name",
+message : liveMessage(state variable)
+})
